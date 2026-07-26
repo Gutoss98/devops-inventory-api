@@ -31,9 +31,9 @@ Programista > GitHub > GitHub Actions > Uruchomienie testów > Budowa obrazu Doc
 - AWS CloudWatch Logs
 - Terraform
 
-  ## Infrastructure as code
+## Infrastructure as code
 
-  Infrastuktura została utworzona przy pomocy Terraform
+Infrastuktura została utworzona przy pomocy Terraform
 
   - Repozytorium ECR
   - Klaster ECS
@@ -43,9 +43,9 @@ Programista > GitHub > GitHub Actions > Uruchomienie testów > Budowa obrazu Doc
   - Security Groups
   - CloudWatch
  
-  ## CI/CD
+## CI/CD
 
-  Proces CI/CD działa w oparciu o GitHub Actions.
+Proces CI/CD działa w oparciu o GitHub Actions.
 
   1. Pobieranie kodu z repozytorium oraz instalację zależnosci.
   2. Wykonanie testów automatycznych.
@@ -54,12 +54,12 @@ Programista > GitHub > GitHub Actions > Uruchomienie testów > Budowa obrazu Doc
   5. Publikacja obrazu w Amazon ECR.
   6. Wdrożenie nowej wersji aplikacji w Amazon ECS.
  
-  ## Budowa aplikacji 
+## Budowa aplikacji 
 
-  Zmiany dokonujemy w katalogu aplikacji
-  devops-inventory-api\app\
+Zmiany dokonujemy w katalogu aplikacji
+devops-inventory-api\app\
  
- ## Proces wdrażania
+## Proces wdrażania
 
  Każdy wykonany "git push" do repozytorium auotmatycznie uruchamia pipeline GitHub Actrions.
 
@@ -69,5 +69,7 @@ Budowany jest nowy obraz Docker, oraz publikowany w Amazon ECR, wykonuje się au
 
 ## Publiczny Adres aplikacji 
 Aplikacja dostępna jest pod adresem: 
-
+http://3.87.69.179:8000/health
+http://3.87.69.179:8000/version
+http://3.87.69.179:8000/hosts
   
