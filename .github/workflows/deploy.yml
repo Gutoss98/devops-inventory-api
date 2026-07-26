@@ -47,4 +47,7 @@ jobs:
     run: |
      docker build \
       -t ${{ secrets.ECR_REPOSITORY }}:latest \
-      . 
+      .
+  - name: push docker to ECR
+    run: |
+     docker push ${{ secrets.ECR_REPOSITORY }}:latest 
