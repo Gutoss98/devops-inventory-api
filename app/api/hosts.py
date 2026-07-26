@@ -13,8 +13,23 @@ class Host(BaseModel):
     os: str
 
 
-hosts = []
-
+hosts = [
+    Host(
+        hostname="web01",
+        ip="10.0.1.10",
+        os="Rocky Linux 9"
+    ),
+    Host(
+        hostname="db01",
+        ip="10.0.1.20",
+        os="Oracle Linux 9"
+    ),
+    Host(
+        hostname="monitor01",
+        ip="10.0.1.30",
+        os="Ubuntu Server 24.04"
+    )
+]
 
 @router.get("")
 def get_hosts():
