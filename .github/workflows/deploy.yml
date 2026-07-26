@@ -39,3 +39,12 @@ jobs:
   - name: verify aws user
     run: |
      aws sts get-caller-identity
+ 
+  - name: ECR login
+    uses: aws-actions/amazon-ecr-login@v2
+  
+  - name docker image
+    run: |
+     docker build \
+      -t ${{ secrets.ECR_REPOSITORY }}:latest \
+      . 
