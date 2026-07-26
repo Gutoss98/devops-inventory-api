@@ -1,17 +1,14 @@
 from fastapi.testclient import TestClient
-from app.main import app
+from app.main import app, APP_VERSION
 
 client = TestClient(app)
 
-
 def test_health():
     response = client.get("/health")
-
     assert response.status_code == 200
     assert response.json() == {"status": "UP"}
 
 def test_version():
     response = client.get("/version")
-
     assert response.status_code == 200
     assert response.json() == {"version": APP_VERSION}
