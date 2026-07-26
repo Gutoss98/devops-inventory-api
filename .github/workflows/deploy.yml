@@ -43,7 +43,7 @@ jobs:
   - name: ECR login
     uses: aws-actions/amazon-ecr-login@v2
   
-  - name docker image
+  - name: docker image
     run: |
      docker build \
       -t ${{ secrets.ECR_REPOSITORY }}:latest \
