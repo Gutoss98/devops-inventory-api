@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.api.hosts import router as hosts_router
 
-APP_VERSION = "1.0.2"
+APP_VERSION = "1.0.3"
 
 app = FastAPI(
     title="Infrastructure Inventory API",
