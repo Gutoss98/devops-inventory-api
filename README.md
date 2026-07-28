@@ -69,7 +69,7 @@ Budowany jest nowy obraz Docker, oraz publikowany w Amazon ECR, wykonuje się au
 
 ## Publiczny Adres aplikacji 
 Aplikacja dostępna jest pod adresem: 
-http://3.87.69.179:8000/health
-http://3.87.69.179:8000/version
-http://3.87.69.179:8000/hosts
+http://44.199.231.111:8000/health
+http://44.199.231.111:8000/version
+http://44.199.231.111:8000/hosts
   
